@@ -1,6 +1,42 @@
+:root{
+    --yellow-900 : #030201;
+    --yellow-800 : #40340F;
+    --yellow-700 : #7B661F;
+    --yellow-600 : #B59630;
+    --yellow-500 : #EEC643;
+    --yellow-400 : #FDD34C;
+    --yellow-300 : #FFDF58;
+    --yellow-200 : #FFE867;
+    --yellow-100 : #FFFBAD;
+}
+
 *{
     padding: 0;
     margin:  0;
     color: white;
-    background: black;
+    font-family: 'Poppins-R';
+}
+
+body{
+    background-color: var(--yellow-800);
+}
+
+
+
+.p-button1{
+    padding: 12px;
+    margin-top: 8px;
+    background-color: var(--yellow-500);
+    color: var(--yellow-900);
+    border-radius: 12px;
+}
+
+.s-round-button1{
+    padding: 2px;
+    position: relative;
+
+}
+
+.s-round-button1:hover{
+    border-bottom: 2px solid var(--yellow-500);
 }

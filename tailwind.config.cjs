@@ -8,7 +8,17 @@ module.exports = {
         poppins_b:["Poppins-B","sans-serif"]
       },
       colors:{
-        'yellow' : '#eec643', 
+        'yellow' : {
+          900 : '#030201',
+          800 : '#40340F',
+          700 : '#7B661F',
+          600 : '#B59630',
+          500 : '#EEC643',
+          400 : '#FDD34C',
+          300 : '#FFDF58',
+          200 : '#FFE867',
+          100 : '#FFFBAD',
+        }, 
         'black' : '#141414'
       }
     }
