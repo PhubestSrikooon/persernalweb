@@ -1,16 +1,17 @@
 <script>
     import "../app.css";
     import "$lib/style/root.css"
+    import Aboutmenu from "$lib/element/aboutmenu.svelte";
 
     const learnmore_dropdown = [
         {
-            name : 'Home',
-            path : '/',
+            name : 'Welcome',
+            path : '#welcome',
             image : 'home'
         },
         {
-            name : 'Collection',
-            path : '/collection',
+            name : 'About',
+            path : '#aboutme',
             image : 'inventory_2'
         },
         {
@@ -53,17 +54,24 @@
     </div>
 </section>
 
-<section class="aboutme p-4 flex relative max-w-[768px] m-auto" id="aboutme">
-    <div class="me_image p-4 relative max-w-[40%] m-auto">
-        <img class="rounded-2xl border-2 border-yellow-500" src="public/Images/me.jpg" alt="">
-        <p class="absolute top-[20%] left-[55%] text-[1vw] bg-black p-3 rounded-[25px] flex items-center translate-x-[-100%] translate-y-[-20%]">
-            This is me
-            <span class="material-symbols-outlined pl-2 text-[2vw]">arrow_right</span>
-        </p>
+<section id="aboutme" class="bg-black">
+    <div class="aboutme p-4 flex relative max-w-[768px] m-auto" >
+        <div class="me_image p-4 relative max-w-[40%] m-auto">
+            <img class="rounded-2xl border-2 border-yellow-500" src="public/Images/me.jpg" alt="">
+            <p class="absolute top-[20%] left-[55%] text-[1vw] bg-black p-3 rounded-[25px] flex items-center translate-x-[-100%] translate-y-[-20%]">
+                This is me
+                <span class="material-symbols-outlined pl-2 text-[2vw]">arrow_right</span>
+            </p>
+        </div>
+        <div class="p-4">
+            <h1 class="text-2xl font-poppins_r text-yellow-500">ABOUT ME</h1>
+            <p>Hi my name is <b>Phubest Srikoon</b> my friends call me <b>Best</b>. I love to coding and do some computer stuff....</p>
+            <p class="text-2xl font-poppins_r text-yellow-500 pt-4">CONTACT</p>
+        </div>
     </div>
-    <div class="p-4">
-        <h1 class="text-2xl font-poppins_r text-yellow-500">ABOUT ME</h1>
-        <p>Hi my name is <b>Phubest Srikoon</b> my friends call me <b>Best</b>. I love to coding and do some computer stuff....</p>
+    <hr class="max-w-[768px] m-auto">
+    <div class="max-w-[1200px] m-auto p-8">
+        <Aboutmenu/>
     </div>
 </section>
 
@@ -121,6 +129,5 @@
         .aboutme{
             display: block;
         }
-        
     }
 </style>

@@ -80,7 +80,7 @@
 
 <style>
     nav{
-        background: linear-gradient(180deg , var(--yellow-800),transparent);
+        background: linear-gradient(180deg , var(--yellow-800),var(--yellow-800),transparent);
     }
     li{
         list-style: none;
