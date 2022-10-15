@@ -18,7 +18,7 @@
         <span class="material-symbols-outlined">error</span>
     </div>
     <div class="scroll_down">
-        <span class="material-symbols-outlined animate-ping w-6 h-6">arrow_left</span>
+        <span class="material-symbols-outlined ">arrow_left</span>
         <p>Go back to home</p>
     </div>
 </section>
@@ -41,7 +41,7 @@
     .scroll_down{
         text-align: center;
         position: absolute;
-        top:90%;
+        bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
         opacity: .7;

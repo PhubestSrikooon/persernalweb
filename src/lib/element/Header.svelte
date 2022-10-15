@@ -10,9 +10,9 @@
             image : 'home'
         },
         {
-            name : 'About',
-            path : '/about',
-            image : 'info'
+            name : 'Collection',
+            path : '/collection',
+            image : 'inventory_2'
         },
         {
             name : 'Setting',
@@ -25,7 +25,6 @@
     var menustate = false
 
     function showMenu(){
-        console.log(menustate)
         menustate = !menustate
     }
 

@@ -1,19 +1,51 @@
 <script>
     import "../app.css";
     import "$lib/style/root.css"
+
+    const learnmore_dropdown = [
+        {
+            name : 'Home',
+            path : '/',
+            image : 'home'
+        },
+        {
+            name : 'Collection',
+            path : '/collection',
+            image : 'inventory_2'
+        },
+        {
+            name : 'Setting',
+            path : '/404',
+            image : 'settings'
+        }
+    ]
+    var learnmore_expand = false
+
+    function togglelearnmore(){
+        learnmore_expand = !learnmore_expand
+    }
 </script>
 
-<section class="h-screen overflow-hidden relative">
+<section class="h-screen overflow-hidden relative" id="welcome">
     <div class="main_title">
         <h1 class="font-poppins_b text-5xl">Everyting is possible</h1>
         <p class="font-poppins-r text-xl text-gray-300 mt-2">Welcome to my website</p>
-        <button class="p-button1 flex overflow-hidden items-center">
+
+        <button class="p-button1 flex overflow-hidden items-center relative" on:click={togglelearnmore}>
             <span class="material-symbols-outlined bg-transparent text-yellow-900">arrow_drop_down</span>
             Learn More
+            {#if learnmore_expand}
+                <div class="absolute bg-black top-[120%] text-left rounded-xl">
+                    {#each learnmore_dropdown as ldrop}
+                        <a href={ldrop.path} class="flex items-center p-4"><span class="material-symbols-outlined pr-2">{ldrop.image}</span>{ldrop.name}</a>
+                    {/each}
+                </div>
+            {/if}
         </button>
+
     </div>
     <div class="side_title">
-        <span class="material-symbols-outlined">home</span>
+        <img src="public/Images/virusscope.PNG" alt="">
     </div>
     <div class="scroll_down">
         <span class="material-symbols-outlined animate-bounce w-6 h-6">arrow_downward</span>
@@ -21,42 +53,21 @@
     </div>
 </section>
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora sapiente officia fugit aut dolore corporis amet nesciunt inventore! Dolorem quas minima commodi exercitationem asperiores quidem corporis. Hic, fuga perferendis.
+<section class="aboutme p-4 flex relative max-w-[768px] m-auto" id="aboutme">
+    <div class="me_image p-4 relative max-w-[40%] m-auto">
+        <img class="rounded-2xl border-2 border-yellow-500" src="public/Images/me.jpg" alt="">
+        <p class="absolute top-[20%] left-[55%] text-[1vw] bg-black p-3 rounded-[25px] flex items-center translate-x-[-100%] translate-y-[-20%]">
+            This is me
+            <span class="material-symbols-outlined pl-2 text-[2vw]">arrow_right</span>
+        </p>
+    </div>
+    <div class="p-4">
+        <h1 class="text-2xl font-poppins_r text-yellow-500">ABOUT ME</h1>
+        <p>Hi my name is <b>Phubest Srikoon</b> my friends call me <b>Best</b>. I love to coding and do some computer stuff....</p>
+    </div>
+</section>
+
+
 
 <style>
     .main_title{
@@ -66,20 +77,50 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempora
         transform: translateY(-50%);
     }
     .side_title{
+        z-index: -1;
         position: absolute;
         top: 50%;
         right: 10%;
         transform: translateY(-50%);
     }
-    .side_title span{
-        font-size: 10vw;
+    .side_title:first-child{
+        max-width: 50%;
     }
     .scroll_down{
         text-align: center;
         position: absolute;
-        top:90%;
+        bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
         opacity: .7;
+    }
+
+    @media (max-width: 768px) {
+        .main_title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .main_title button{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .side_title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .side_title:first-child{
+            max-width: 70%;
+        }
+        .aboutme{
+            display: block;
+        }
+        
     }
 </style>

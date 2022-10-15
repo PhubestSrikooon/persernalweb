@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily:{
         poppins_r:["Poppins-R","sans-serif"],
-        poppins_b:["Poppins-B","sans-serif"]
+        poppins_b:["Poppins-B","sans-serif"],
+        poppins_eb:["Poppins-EB","sans-serif"]
       },
       colors:{
         'yellow' : {

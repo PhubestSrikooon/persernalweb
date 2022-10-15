@@ -29,6 +29,7 @@ body{
     background-color: var(--yellow-500);
     color: var(--yellow-900);
     border-radius: 12px;
+    overflow:visible;
 }
 
 .s-round-button1{

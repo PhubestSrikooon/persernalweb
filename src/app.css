@@ -5,10 +5,15 @@
 
 @font-face {
     font-family: 'Poppins-R';
-    src: url("../public/Poppins/Poppins-Regular.ttf");
+    src: url("../public/Fonts/Poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Poppins-B';
-    src: url("../public/Poppins/Poppins-Bold.ttf");
+    src: url("../public/Fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins-EB';
+    src: url("../public/Fonts/Poppins/Poppins-ExtraBold.ttf");
 }
