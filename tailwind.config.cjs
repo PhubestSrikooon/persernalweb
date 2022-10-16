@@ -9,6 +9,9 @@ module.exports = {
         poppins_eb:["Poppins-EB","sans-serif"]
       },
       colors:{
+        'red':{
+          500:'#DA4A48'
+        },
         'yellow' : {
           900 : '#110c06',
           800 : '#40340F',
@@ -20,7 +23,13 @@ module.exports = {
           200 : '#FFE867',
           100 : '#FFFBAD',
         }, 
-        'black' : '#141414'
+        'black' : '#141414',
+        'r-black' : {
+          700:'#141414',
+          800:'#0a0a0a',
+          900:'#050505',
+        },
+
       }
     }
   },

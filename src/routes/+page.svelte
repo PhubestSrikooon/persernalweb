@@ -33,15 +33,17 @@
         <p class="font-poppins-r text-xl text-gray-300 mt-2">Welcome to my website</p>
 
         <button class="p-button1 flex overflow-hidden items-center relative" on:click={togglelearnmore}>
-            <span class="material-symbols-outlined bg-transparent text-yellow-900">arrow_drop_down</span>
-            Learn More
             {#if learnmore_expand}
                 <div class="absolute bg-black top-[120%] text-left rounded-xl">
                     {#each learnmore_dropdown as ldrop}
                         <a href={ldrop.path} class="flex items-center p-4"><span class="material-symbols-outlined pr-2">{ldrop.image}</span>{ldrop.name}</a>
                     {/each}
                 </div>
+                <span class="material-symbols-outlined bg-transparent text-yellow-900">arrow_drop_up</span>
+                {:else}
+                <span class="material-symbols-outlined bg-transparent text-yellow-900">arrow_drop_down</span>
             {/if}
+            Learn More
         </button>
 
     </div>
@@ -67,10 +69,18 @@
             <h1 class="text-2xl font-poppins_r text-yellow-500">ABOUT ME</h1>
             <p>Hi my name is <b>Phubest Srikoon</b> my friends call me <b>Best</b>. I love to coding and do some computer stuff....</p>
             <p class="text-2xl font-poppins_r text-yellow-500 pt-4">CONTACT</p>
+            <div class="space-x-4">
+                <i class="fa-brands fa-github text-2xl"></i>
+                <i class="fa-brands fa-twitter text-2xl"></i>
+                <i class="fa-brands fa-facebook text-2xl"></i>
+                <i class="fa-brands fa-discord text-2xl"></i>
+            </div>
+            <p><b>Email</b> : forbf100@gmail.com</p>
+            <p><b>Phone</b> : (66+)64-215-9087</p>
         </div>
     </div>
-    <hr class="max-w-[768px] m-auto">
-    <div class="max-w-[1200px] m-auto p-8">
+    <!-- <hr class="max-w-[768px] m-auto"> -->
+    <div class="max-w-[900px] m-auto p-8">
         <Aboutmenu/>
     </div>
 </section>

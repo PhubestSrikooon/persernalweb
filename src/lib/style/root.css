@@ -8,6 +8,10 @@
     --yellow-300 : #FFDF58;
     --yellow-200 : #FFE867;
     --yellow-100 : #FFFBAD;
+
+    --r-black-700:#141414;
+    --r-black-800:#0a0a0a;
+    --r-black-900:#050505;
 }
 
 *{
@@ -15,6 +19,7 @@
     margin:  0;
     color: white;
     font-family: 'Poppins-R';
+    transition: all ease .2s;
 }
 
 body{

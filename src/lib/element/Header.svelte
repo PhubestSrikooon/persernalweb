@@ -40,7 +40,7 @@
             <button class="s-round-button1">{currentLang}</button>
             <li class="flex items-center">
                 <span class="material-symbols-outlined p-2">search</span>
-                <input class="p-2 bg-transparent" type="text" placeholder="Search ...">
+                <button class="p-2 bg-transparent opacity-[0.5] w-[150px]">Search ...</button>
             </li>
             {#each navlist as list}
                 <li class:active={$page.url.pathname === list.path} class="s-round-button1">
@@ -60,7 +60,7 @@
                     <button class="s-round-button1">{currentLang}</button>
                     <li class="flex items-center">
                         <span class="material-symbols-outlined p-2">search</span>
-                        <input class="p-2 bg-transparent" type="text" placeholder="Search ...">
+                        <button class="p-2 bg-transparent opacity-[0.5] w-[150px]">Search ...</button>
                     </li>
                     {#each navlist as list}
                         <li class:active={$page.url.pathname === list.path} class="s-round-button1">
