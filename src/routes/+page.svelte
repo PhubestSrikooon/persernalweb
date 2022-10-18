@@ -15,9 +15,14 @@
             image : 'inventory_2'
         },
         {
-            name : 'Setting',
-            path : '/404',
-            image : 'settings'
+            name : 'Skills',
+            path : '#skills',
+            image : 'monitoring'
+        },
+        {
+            name : 'Shortcut',
+            path : '#shortcut',
+            image : 'description'
         }
     ]
     var learnmore_expand = false
@@ -34,7 +39,7 @@
 
         <button class="p-button1 flex overflow-hidden items-center relative" on:click={togglelearnmore}>
             {#if learnmore_expand}
-                <div class="absolute bg-black top-[120%] text-left rounded-xl">
+                <div class="absolute bg-black top-[120%] text-left rounded-xl z-auto">
                     {#each learnmore_dropdown as ldrop}
                         <a href={ldrop.path} class="flex items-center p-4"><span class="material-symbols-outlined pr-2">{ldrop.image}</span>{ldrop.name}</a>
                     {/each}
@@ -48,7 +53,7 @@
 
     </div>
     <div class="side_title">
-        <img src="public/Images/virusscope.PNG" alt="">
+        <!-- <img src="public/Images/virusscope.PNG" alt=""> -->
     </div>
     <div class="scroll_down">
         <span class="material-symbols-outlined animate-bounce w-6 h-6">arrow_downward</span>
