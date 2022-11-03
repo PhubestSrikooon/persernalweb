@@ -76,7 +76,7 @@
             </p>
         </div>
         <div class="p-4">
-            <h1 class="text-2xl font-poppins_r text-yellow-500">ABOUT ME</h1>
+            <h1 class="text-2xl text-yellow-500">ABOUT ME</h1>
             <p>Hi my name is <b>Phubest Srikoon</b> my friends call me <b>Best</b>. I love to coding and do some computer stuff....</p>
             <p class="text-2xl font-poppins_r text-yellow-500 pt-4">CONTACT</p>
             <div class="space-x-4">

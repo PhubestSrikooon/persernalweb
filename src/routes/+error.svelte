@@ -7,8 +7,8 @@
 
 <section class="h-screen overflow-hidden relative">
     <div class="main_title">
-        <h1 class="font-poppins_b text-5xl">{$page.status}</h1>
-        <p class="font-poppins-r text-xl text-gray-300 mt-2">{$page.error?.message}</p>
+        <h1 class="  text-5xl">{$page.status}</h1>
+        <p class=" text-xl text-gray-300 mt-2">{$page.error?.message}</p>
         <button class="p-button1 flex overflow-hidden items-center">
             <span class="material-symbols-outlined bg-transparent text-yellow-900">arrow_left</span>
             Back
