@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        poppins_r:["Poppins-R","sans-serif"],
-        poppins_b:["Poppins-B","sans-serif"],
-        poppins_eb:["Poppins-EB","sans-serif"]
+        poppins_r:["Poppins","sans-serif"],
+        poppins_b:["Poppins","sans-serif"],
+        poppins_eb:["Poppins","sans-serif"]
       },
       colors:{
         'red':{

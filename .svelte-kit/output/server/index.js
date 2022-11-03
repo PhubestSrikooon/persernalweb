@@ -2123,7 +2123,7 @@ function set_paths(paths) {
   base = paths.base;
   assets = paths.assets || base;
 }
-const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />\n		<script src="https://kit.fontawesome.com/4e790665b7.js" crossorigin="anonymous"><\/script>\n		<link href="src/lib/style/root.css" rel="stylesheet" />\n		<meta name="viewport" content="width=device-width" />\n		' + head + "\n	</head>\n	<body >\n		<div>" + body + "</div>\n	</body>\n</html>\n";
+const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />\n		<link rel="preconnect" href="https://fonts.googleapis.com">\n		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">\n		<script src="https://kit.fontawesome.com/4e790665b7.js" crossorigin="anonymous"><\/script>\n		<link href="src/lib/style/root.css" rel="stylesheet" />\n		\n		<meta name="viewport" content="width=device-width" />\n		' + head + "\n	</head>\n	<body >\n		<div>" + body + "</div>\n	</body>\n</html>\n";
 const error_template = ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
