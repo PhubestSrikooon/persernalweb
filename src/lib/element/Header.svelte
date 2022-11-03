@@ -29,7 +29,7 @@
 <nav class="fixed z-50 w-[100%]">
     <div class="flex justify-between p-4 items-center">
         <div>
-            <a href="/">Logo</a>
+            <a href="/" class="flex"><img src="favicon.png" class="mr-[4px] w-[20px] h-[20px]" alt="dog!" /> Best!</a>
         </div>
         <div class="hidden md:flex space-x-4 items-center">
             <!-- <button class="s-round-button1">{currentLang}</button>

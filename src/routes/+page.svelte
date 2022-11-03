@@ -32,6 +32,11 @@
     }
 </script>
 
+<svelte:head>
+    <title> Welcome to BEST!</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</svelte:head>
+
 <section class="h-screen overflow-hidden relative" id="welcome">
     <div class="main_title">
         <h1 class="font-poppins_b text-5xl">Everyting is possible</h1>
