@@ -1,0 +1,16 @@
+{
+    "home":{
+     "title":"Home",
+     "subtitle":"Welcome to the home page {{name}}"
+    },
+    "setting":{
+        "title":"Setting",
+        "themes":{
+            "title":"Theme",
+            "light":"Light",
+            "dark":"Dark",
+            "auto":"Auto"
+        },
+        "back":"Back"
+    }
+}
